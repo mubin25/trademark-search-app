@@ -3,7 +3,7 @@ import React from "react";
 const StatusFilter = ({ filters = {}, onFilterChange }) => {
   const statuses = ["registered", "pending", "abandoned", "others"];
 
-  // Ensure filters.status is initialized
+
   const currentStatus = filters.status || [];
 
   const handleStatusChange = (status) => {
@@ -13,7 +13,7 @@ const StatusFilter = ({ filters = {}, onFilterChange }) => {
 
     console.log("Updated Status Filter:", newStatus); 
 
-    // Ensure other filters remain unchanged
+    
     onFilterChange({ ...filters, status: newStatus });
   };
 

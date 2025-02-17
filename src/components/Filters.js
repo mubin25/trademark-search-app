@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DisplayToggle from "./DisplayToggle"; // ✅ Import Toggle Component
+import DisplayToggle from "./DisplayToggle"; 
 
 const Filters = ({ filters, owners, lawFirms, attorneys, onFilterChange }) => {
   const [searchOwner, setSearchOwner] = useState("");
@@ -108,7 +108,7 @@ const Filters = ({ filters, owners, lawFirms, attorneys, onFilterChange }) => {
         ))
       }
 
-      {/* 🔹 Display Toggle for Grid/List View */}
+    
       <DisplayToggle filters={filters} onFilterChange={onFilterChange} />
     </div>
   );
